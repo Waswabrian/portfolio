@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waswa Brian W Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>WEKESA BRIAN  WASWA </h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <img src="images/profile.jpg" alt=" Profile Picture" class="profile-pic">
+                <h2>Hi, I'm Waswa Brian!</h2>
+                <p>A passionate  Web Developer, Graphic Designer, ML and AI developer, dedicated to creating innovative solutions, mordern dynamic systems intergated with  AI and offer IT solutions consultations.</p>
+                <a href="#contact" class="btn">Get in Touch</a>
+            </div>
+        </section>
+
+        <section id="about" class="section-padded">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Write a brief, engaging paragraph about yourself. Highlight your background, what drives you, and what makes you unique. For example: "I'm a seasoned front-end developer with 5+ years of experience building responsive and user-friendly web applications. I love clean code and solving complex problems with elegant solutions."</p>
+                <p>Mention any key achievements, philosophies, or interests that relate to your professional life.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="section-alt">
+            <div class="container">
+                <h2>My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">HTML5</div>
+                    <div class="skill-item">CSS3</div>
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">Node JS</div>
+                    <div class="skill-item">Python</div>
+                    <div class="skill-item">SQL</div>
+                    <div class="skill-item">Bootstrap5</div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-padded">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="images/doctor.png" alt="Project 1 Thumbnail">
+                        <h3>Tech-Care Center</h3>
+                        <p>An AI-Powered personal medicine recommendation system. The system uses linear regression to make predictions in consideration of the symptoms provided.</p>
+                        <a href="https://github.com/Waswabrian/Tech-Care/" target="_blank" class="project-link">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/house-home.png" alt="Project 2 Thumbnail">
+                        <h3>House price predictor</h3>
+                        <p>A Machine Learning project that contains  an ML model that uses various datasets to train models that can predict house prices based on features like location, size, and amenities.</p>
+                        <a href="https://github.com/Waswabrian/Home_price_predictor" target="_blank" class="project-link">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/crops.png" alt="Project 3 Thumbnail">
+                        <h3>Agricultural products market analysis system</h3>
+                        <p>Machine Learning model for prediction of agricultural product sales trend to help farmers know what products 
+                            are needed on the market and the periods the products will be boasting sales.</p>
+                        <a href="https://github.com/Waswabrian/hackathon_2024.RUiru" target="_blank" class="project-link">View Project</a>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-alt">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Feel free to reach out if you have any questions, opportunities, or just want to say hello!</p>
+                  <!-- <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        <form id="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+              <button type="submit" class="btn">Send Message</button>
+                </form> -->
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/brian-wekesa-859454289?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B2YMPTMxHQ%2B%2B6nCnPQzDhzw%3D%3D" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/Waswabrian" target="_blank">GitHub</a>
+                    <a href="mailto:waswa2002brian@gmail.com">Email Me</a>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Waswabrian. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+<!-- <script>document.addEventListener('DOMContentLoaded', function() {
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent default jump behavior
+
+            const targetId = this.getAttribute('href').substring(1); // Get the section ID
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - (document.querySelector('header').offsetHeight), // Adjust for fixed header
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Basic form submission (you'll need a backend for actual email sending)
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent default form submission
+
+            alert('Thank you for your message! (Form submission is simulated for this example. A backend is needed to send actual emails.)');
+
+            // In a real scenario, you would send this data to a server
+            // using fetch() or XMLHttpRequest.
+            // Example:
+            /*
+            const formData = new FormData(contactForm);
+            fetch('/send-email.php', { // Replace with your backend endpoint
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                alert('Message sent successfully!');
+                contactForm.reset();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was an error sending your message.');
+            });
+            */
+            contactForm.reset(); // Clear form fields after "submission"
+        });
+    }
+});document.addEventListener('DOMContentLoaded', function() {
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent default jump behavior
+
+            const targetId = this.getAttribute('href').substring(1); // Get the section ID
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - (document.querySelector('header').offsetHeight), // Adjust for fixed header
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Basic form submission (you'll need a backend for actual email sending)
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent default form submission
+
+            alert('Thank you for your message! (Form submission is simulated for this example. A backend is needed to send actual emails.)');
+
+            // In a real scenario, you would send this data to a server
+            // using fetch() or XMLHttpRequest.
+            // Example:
+            /*
+            const formData = new FormData(contactForm);
+            fetch('/send-email.php', { // Replace with your backend endpoint
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                alert('Message sent successfully!');
+                contactForm.reset();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was an error sending your message.');
+            });
+            */
+            contactForm.reset(); // Clear form fields after "submission"
+        });
+    }
+}); -->
+<!-- </script> -->
+</html>
